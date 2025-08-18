@@ -5,7 +5,7 @@ Upstream-Status: Inappropriate [manually created]
  [client]
  # host or IP and optional port
 -hawkbit_server            = 10.10.0.254:8080
-+hawkbit_server            = 192.168.1.34:8080
++hawkbit_server            = <HAWKBIT_SERVER>
  
  # true = HTTPS, false = HTTP
  ssl                       = false
@@ -14,11 +14,12 @@ Upstream-Status: Inappropriate [manually created]
  
  # Target name (controller id)
 -target_name               = test-target
-+target_name               = test-target-raspi4
++target_name               = <TARGET_NAME>
  
  # Security token
 -auth_token                = cb115a721af28f781b493fa467819ef5
-+auth_token                = 04e3c792bf57abc7028cae718effb43d
++auth_token                = <AUTH_TOKEN>
  
  # Or gateway_token can be used instead of auth_token
  #gateway_token             = cb115a721af28f781b493fa467819ef5
+ 

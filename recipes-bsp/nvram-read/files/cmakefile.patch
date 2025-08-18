@@ -1,0 +1,22 @@
+Upstream-Status: Inappropriate [manually created]
+--- git.orig/CMakeLists.txt
++++ git/CMakeLists.txt
+@@ -1,8 +1,6 @@
+ cmake_minimum_required(VERSION 3.22)
+ project(nvram-read VERSION 1.0)
+ 
+-get_target_property(LIBNVRAM_INCLUDES libnvram INCLUDE_DIRECTORIES)
+-
+ file(GLOB COMMON_SOURCES ${PROJECT_SOURCE_DIR}/src/*.c)
+ set(COMMON_INCLUDES ${PROJECT_SOURCE_DIR}/src/)
+ 
+@@ -26,7 +24,7 @@ target_compile_definitions(${PROJECT_NAME} PUBLIC
+ 
+ target_link_libraries(${PROJECT_NAME}
+   m
+-  libnvram
++  nvram
+ )
+ 
+ # for yocto
+ 
