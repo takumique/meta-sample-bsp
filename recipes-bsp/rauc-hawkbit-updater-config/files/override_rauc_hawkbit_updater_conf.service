@@ -1,0 +1,10 @@
+[Unit]
+Description=Override config.conf for rauc-bithawk-updater
+Before=rauc-hawkbit-updater.service
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/override_rauc_hawkbit_updater_conf.sh
+
+[Install]
+WantedBy=multi-user.target
